@@ -1,15 +1,33 @@
-﻿using System;
+﻿/*
+ * Author: Dilakshan Packiyanathan
+ * Student # : 300843256
+ * Date Modified: July 8th, 2016
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace COMP123_S2016_Assignmnet3
+namespace Planets
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
+            Console.WriteLine("======================================================");
+            GiantPlanet giantPlanet = new GiantPlanet("Jupiter", 4578356, 452145685, "Gas");
+            Console.WriteLine(giantPlanet.ToString());
+            TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth", 78238625, 5478564, true);           
+            Console.WriteLine(terrestrialPlanet.ToString());
+            Console.WriteLine("======================================================");
+            Console.ReadLine();
+        }
+
+        public void Method()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
